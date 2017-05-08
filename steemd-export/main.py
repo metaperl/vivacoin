@@ -52,6 +52,10 @@ class Transaction(object):
         return self.operation[1]   
 
     @property
+    def operation_amount(self):
+        return Amount(self.operation_detail['amount']).amount
+
+    @property
     def transaction_type(self):
         return self.operation[0]
 
@@ -156,7 +160,7 @@ class TransferToVesting(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return [0, self.operation[1], 0, 0]
+        return [0, self.operation_amount, 0, 0]
 
 
 class Unknown(Transaction):
