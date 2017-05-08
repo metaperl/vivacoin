@@ -109,6 +109,11 @@ class ClaimRewardBalance(MNoMemo, Transaction):
     @property
     def currency_fields(self):
         return self.reward2currencyfields(lambda t: 'reward_{}'.format(t))
+
+class CurationReward(MNoMemo, Transaction):
+    @property
+    def currency_fields(self):
+        return [0, 0, 0, Amount(self.operation_detail['reward']).amount]
     
 class AuthorReward(MNoMemo, Transaction):
     @property
@@ -167,20 +172,22 @@ def bless_row(r):
     op = r[1]['op'][0]
     ignore = ['comment_options', 'account_witness_vote', 'curation_reward', 
               'delete_comment', 'account_create', 'custom_json', 
-              'vote', 'author_reward', 'comment', 'account_witness_proxy'
+              'vote', 'author_reward', 'comment', 'account_witness_proxy',
+              'limit_order_create', 'limit_order_cancel'
               ]
     dispatch = dict(
             transfer=Transfer, transfer_to_vesting=TransferToVesting,
             interest=Interest, fill_vesting_withdraw=FillVestingWithdraw,
             claim_reward_balance=ClaimRewardBalance, fill_order=FillOrder,
-            author_reward=AuthorReward, withdraw_vesting=WithdrawVesting
+            author_reward=AuthorReward, withdraw_vesting=WithdrawVesting,
+            curation_reward=CurationReward
             )
     
     if op in dispatch:
         return dispatch[op](r, op)
     
     if op in ignore:
-        return Ignore(r, op)
+        return None
 
     return Unknown(r, op)
 
@@ -194,8 +201,9 @@ with open('out.csv', 'w', newline='', encoding='utf-8') as csvfile:
         "Date TransactionType SBD Steem SteemPower Vests TransactionID Memo".split())
 
     for record in s.get_account_history(acct, index_from=-1, limit=top_index):
-        ops.add(record[1]['op'][0])
         r = bless_row(record)
+        if not r:
+            continue
         print(str(r).encode('utf-8'))
         # print(u'' + MyPP().pformat(r))
         writer.writerow(r.build())
