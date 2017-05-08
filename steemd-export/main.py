@@ -67,11 +67,9 @@ class Transaction(object):
     
     def amount2currencyfields(self):
         amount = Amount(self.operation_detail['amount'])
-        retval = [0, 0, 0]
+        retval = [0, 0, 0, 0]
         retval[self.currency_index[amount.symbol]] = amount.amount
         return retval
-
-
 
     def build(self):
         return [self.timestamp, self.transaction_type] + self.currency_fields + [self.transaction_id, self.memo]
@@ -79,6 +77,9 @@ class Transaction(object):
     def reward2currencyfields(self, concat):
         retval = list()
         for t in self.reward_fields:
+            if t == 'steem_power':
+                retval.append('n/a')
+                continue
             l = concat(t)
             m = Amount(self.operation_detail[l]).amount
             retval.append(m)
@@ -103,7 +104,7 @@ class ClaimRewardBalance(MNoMemo, Transaction):
     
     @property
     def reward_fields(self):
-        return "sbd steem vests".split()
+        return "sbd steem steem_power vests".split()
 
     @property
     def currency_fields(self):
@@ -112,7 +113,7 @@ class ClaimRewardBalance(MNoMemo, Transaction):
 class AuthorReward(MNoMemo, Transaction):
     @property
     def reward_fields(self):
-        return "sbd steem vesting".split()
+        return "sbd steem steem_power vesting".split()
     
     @property
     def currency_fields(self):
