@@ -126,9 +126,19 @@ class AuthorReward(MNoMemo, Transaction):
     
 class FillOrder(MNoMemo, Transaction):
 
+    def pay_logic(self, label_prefix):
+        
+        def get(label_suffix):
+            return self.operation_detail["{}_{}".format(label_prefix, label_suffix)]
+        
+        owner = get('owner')
+        amount = Amount(get('pays')).amount
+        
+        return -1*amount if owner == 'tradeqwik' else amount
+        
     @property
     def currency_fields(self):
-        return ["TODO", self.operation_detail, 0]
+        return [self.pay_logic('open'), self.pay_logic('current'), 0, 0]
      
 class Interest(MNoMemo, Transaction):
 
@@ -205,7 +215,7 @@ with open('out.csv', 'w', newline='', encoding='utf-8') as csvfile:
         if not r:
             continue
         print(str(r).encode('utf-8'))
-        # print(u'' + MyPP().pformat(r))
+        ops.add(r.op)
         writer.writerow(r.build())
         
     print("OPS:{}".format(ops))

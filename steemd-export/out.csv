@@ -20,8 +20,8 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-02-16T13:27:00,transfer_to_vesting,0,"{'from': 'tradeqwik', 'to': 'tradeqwik', 'amount': '1000.000 STEEM'}",0,0,7917169714f13a8fd65bf00a15d87511437c7fd5
 2017-02-16T21:08:45,transfer,25.0,0,0,0,327e086c6b8228aa516a6320f2c374686b2f9e0e,8430906398976307102
 2017-02-17T01:49:24,transfer,10.0,0,0,0,14ed5230c16f89ca190dc6b2ed2d1871b63d4196,
-2017-02-17T03:03:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487300606, 'current_pays': '302.467 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '42.351 SBD'}",0,45d30d62ef7c09e36e490efee95718c543846dbf
-2017-02-17T03:06:03,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487300757, 'current_pays': '71.590 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '10.000 SBD'}",0,2c462a5d119a7810264671a01b3271b7dfc66c6c
+2017-02-17T03:03:39,fill_order,42.351,-302.467,0,0,45d30d62ef7c09e36e490efee95718c543846dbf
+2017-02-17T03:06:03,fill_order,10.0,-71.59,0,0,2c462a5d119a7810264671a01b3271b7dfc66c6c
 2017-02-17T03:15:36,transfer,100.0,0,0,0,ebcc32c79db8d504c2ac06f8199388eb2c823fbf,witness and hosting
 2017-02-17T03:31:33,transfer,0,409.0,0,0,25b26a17f91019f59b4d0a2ee1718cf95aefcba0,4851628855745259509
 2017-02-17T09:30:30,transfer,0,1982.0,0,0,2298b9055557091d72a0fef798b6a9e6a954af55,7459125207434872497
@@ -34,7 +34,7 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-02-18T01:35:12,curation_reward,0,0,0,2.083127,0000000000000000000000000000000000000000
 2017-02-18T09:24:21,transfer,10.0,0,0,0,75ec2afeae61819fe2dd5ec550b4dd6e78d8e64f,7459125207434872497
 2017-02-18T09:25:03,transfer_to_vesting,0,"{'from': 'tradeqwik', 'to': 'tradeqwik', 'amount': '1000.000 STEEM'}",0,0,7c32be11f49c2b82aac49ede9160d716c2cbdaed
-2017-02-18T09:25:45,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487409937, 'current_pays': '4.319 SBD', 'open_owner': 'teamsmooth-mm', 'open_orderid': 2000, 'open_pays': '35.336 STEEM'}",0,6c4f120a63bc152955f969d0d162aa20f3623086
+2017-02-18T09:25:45,fill_order,35.336,-4.319,0,0,6c4f120a63bc152955f969d0d162aa20f3623086
 2017-02-18T13:26:18,transfer,0,25.191,0,0,9099ff0588a9c83135f2affffb125d2a7af315a4,7364369765141070
 2017-02-18T13:52:30,author_reward,0.0,0.0,n/a,12206.825017,0000000000000000000000000000000000000000
 2017-02-18T15:57:42,curation_reward,0,0,0,31.246009,0000000000000000000000000000000000000000
@@ -44,16 +44,16 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-02-19T21:30:03,curation_reward,0,0,0,4.165888,0000000000000000000000000000000000000000
 2017-02-19T22:22:21,transfer,0,200.0,0,0,625f186b5d8e6fc654660293b9c90d69fd4c22b8,7459125207434872497
 2017-02-20T20:08:39,transfer,83.964,0,0,0,3076307db667ea64092526a38bb0eb6610c04aad,3121281560688057220
-2017-02-20T20:11:15,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487621473, 'current_pays': '366.718 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '43.017 SBD'}",0,33ac2472f0107c7de93784d2ff0053b2c4985ece
-2017-02-20T20:11:15,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487621473, 'current_pays': '95.035 STEEM', 'open_owner': 'svk', 'open_orderid': 1480540505, 'open_pays': '10.644 SBD'}",0,33ac2472f0107c7de93784d2ff0053b2c4985ece
-2017-02-20T20:11:15,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487621473, 'current_pays': '18.018 STEEM', 'open_owner': 'spinner', 'open_orderid': 1487480935, 'open_pays': '2.000 SBD'}",0,33ac2472f0107c7de93784d2ff0053b2c4985ece
-2017-02-20T20:11:15,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487621473, 'current_pays': '20.229 STEEM', 'open_owner': 'mrosenquist', 'open_orderid': 1487457414, 'open_pays': '2.245 SBD'}",0,33ac2472f0107c7de93784d2ff0053b2c4985ece
+2017-02-20T20:11:15,fill_order,43.017,-366.718,0,0,33ac2472f0107c7de93784d2ff0053b2c4985ece
+2017-02-20T20:11:15,fill_order,10.644,-95.035,0,0,33ac2472f0107c7de93784d2ff0053b2c4985ece
+2017-02-20T20:11:15,fill_order,2.0,-18.018,0,0,33ac2472f0107c7de93784d2ff0053b2c4985ece
+2017-02-20T20:11:15,fill_order,2.245,-20.229,0,0,33ac2472f0107c7de93784d2ff0053b2c4985ece
 2017-02-21T03:30:39,curation_reward,0,0,0,585.272051,0000000000000000000000000000000000000000
 2017-02-21T04:38:21,curation_reward,0,0,0,16.662511,0000000000000000000000000000000000000000
-2017-02-21T07:22:42,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487661754, 'current_pays': '464.283 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '50.000 SBD'}",0,d284a7d21d02f75f41b06d9c54c8f7a340cd665e
-2017-02-21T07:22:42,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487661754, 'current_pays': '101.542 STEEM', 'open_owner': 'paco-steem', 'open_orderid': 2567565490, 'open_pays': '10.727 SBD'}",0,d284a7d21d02f75f41b06d9c54c8f7a340cd665e
+2017-02-21T07:22:42,fill_order,50.0,-464.283,0,0,d284a7d21d02f75f41b06d9c54c8f7a340cd665e
+2017-02-21T07:22:42,fill_order,10.727,-101.542,0,0,d284a7d21d02f75f41b06d9c54c8f7a340cd665e
 2017-02-21T23:02:42,curation_reward,0,0,0,4.165473,0000000000000000000000000000000000000000
-2017-02-22T00:43:00,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1487724175, 'current_pays': '11.110 SBD', 'open_owner': 'teamsmooth-mm', 'open_orderid': 2000, 'open_pays': '105.249 STEEM'}",0,f6e2f827375a2b1cbecb01b2bf9e809cfe593040
+2017-02-22T00:43:00,fill_order,105.249,-11.11,0,0,f6e2f827375a2b1cbecb01b2bf9e809cfe593040
 2017-02-22T00:50:09,transfer,0,10.0,0,0,c9439dd48b00787ccd77e295b15eaf71f464b362,8835618325791593508
 2017-02-22T07:48:24,transfer,199.99,0,0,0,8711045a70c4f3035755922781aefd05e4bde0b3,7459125207434872497
 2017-02-22T10:18:36,transfer,0,10.0,0,0,4316fc3296bebc319017539a6d59cb56fc972f47,8835618325791593508
@@ -91,18 +91,18 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-03-02T03:35:57,transfer,740.0,0,0,0,691af5bb8b60c4b96af65b0d14fb9c78d3b02ba6,7459125207434872497
 2017-03-02T06:35:06,curation_reward,0,0,0,8.327572,0000000000000000000000000000000000000000
 2017-03-03T11:36:33,transfer,0,1000.0,0,0,c0d3aa5381d414b9fdf8ae7c06fac4426a6e677a,820e9640000511e7bf213b02832761e4
-2017-03-03T11:39:45,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1488541174, 'current_pays': '49.398 SBD', 'open_owner': 'teamsmooth-mm', 'open_orderid': 2000, 'open_pays': '516.885 STEEM'}",0,4c230fa27fad11bce7fd9b8200597575270df28e
-2017-03-03T11:39:45,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1488541174, 'current_pays': '5.000 SBD', 'open_owner': 'tfj', 'open_orderid': 1488477919, 'open_pays': '50.510 STEEM'}",0,4c230fa27fad11bce7fd9b8200597575270df28e
-2017-03-03T11:39:45,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1488541174, 'current_pays': '779.672 SBD', 'open_owner': 'berniesanders', 'open_orderid': 1488432516, 'open_pays': '7796.720 STEEM'}",0,4c230fa27fad11bce7fd9b8200597575270df28e
-2017-03-03T11:39:45,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1488541174, 'current_pays': '79.756 SBD', 'open_owner': 'berniesanders', 'open_orderid': 1488432806, 'open_pays': '797.560 STEEM'}",0,4c230fa27fad11bce7fd9b8200597575270df28e
+2017-03-03T11:39:45,fill_order,516.885,-49.398,0,0,4c230fa27fad11bce7fd9b8200597575270df28e
+2017-03-03T11:39:45,fill_order,50.51,-5.0,0,0,4c230fa27fad11bce7fd9b8200597575270df28e
+2017-03-03T11:39:45,fill_order,7796.72,-779.672,0,0,4c230fa27fad11bce7fd9b8200597575270df28e
+2017-03-03T11:39:45,fill_order,797.56,-79.756,0,0,4c230fa27fad11bce7fd9b8200597575270df28e
 2017-03-03T11:46:45,transfer,0,9000.0,0,0,43823973b585f1d5242f96fba2ef3589de44ba23,a643b23a-0f51-47c5-ac9d-a5d93bcfa4f0
 2017-03-03T22:03:48,curation_reward,0,0,0,2.081724,0000000000000000000000000000000000000000
 2017-03-04T20:04:30,curation_reward,0,0,0,8.326522,0000000000000000000000000000000000000000
 2017-03-04T20:04:30,author_reward,0.002,0.13,n/a,316.407866,0000000000000000000000000000000000000000
 2017-03-05T00:56:51,transfer,92.612,0,0,0,7cd045d62897ab36574a1812c531f459565eb2c5,3121281560688057220
-2017-03-05T01:09:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1488676146, 'current_pays': '50.000 SBD', 'open_owner': 'teamsmooth-mm', 'open_orderid': 2000, 'open_pays': '531.898 STEEM'}",0,0379f6fb06107209cacd62f07692e7efa5cbec84
-2017-03-05T01:09:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1488676146, 'current_pays': '8.626 SBD', 'open_owner': 'kingscrown', 'open_orderid': 1488670010, 'open_pays': '90.000 STEEM'}",0,0379f6fb06107209cacd62f07692e7efa5cbec84
-2017-03-05T01:09:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1488676146, 'current_pays': '33.988 SBD', 'open_owner': 'paco-steem', 'open_orderid': 1781645651, 'open_pays': '352.694 STEEM'}",0,0379f6fb06107209cacd62f07692e7efa5cbec84
+2017-03-05T01:09:12,fill_order,531.898,-50.0,0,0,0379f6fb06107209cacd62f07692e7efa5cbec84
+2017-03-05T01:09:12,fill_order,90.0,-8.626,0,0,0379f6fb06107209cacd62f07692e7efa5cbec84
+2017-03-05T01:09:12,fill_order,352.694,-33.988,0,0,0379f6fb06107209cacd62f07692e7efa5cbec84
 2017-03-05T01:09:57,transfer_to_vesting,0,"{'from': 'tradeqwik', 'to': 'tradeqwik', 'amount': '1000.000 STEEM'}",0,0,56982820f1669602f871658434f6c46b10dfae86
 2017-03-05T01:10:42,withdraw_vesting,0,0,12836309.716177,25f51ce9fa1264f895743f3720be93e097766d6c
 2017-03-05T06:23:30,transfer,0,13370.167,0,0,92a6342ef1ed5fab76ad4bd3f2f3b5b61815b323,3121281560688057220
@@ -142,76 +142,76 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-03-10T15:55:03,transfer,0,10.0,0,0,2ca155463814f97c109a92aa4b94ba56d304c4a8,203
 2017-03-11T02:56:48,curation_reward,0,0,0,39.538619,0000000000000000000000000000000000000000
 2017-03-11T03:19:39,transfer,0,15413.654,0,0,4a65fa3be6cb9e645e728b6f90e019d52ac3df48,4eef32be-2a61-49de-8dbb-1d9fb40f3546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '670.931 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '50.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '100.000 STEEM', 'open_owner': 'cassidyandfranks', 'open_orderid': 1489202381, 'open_pays': '7.372 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '621.036 STEEM', 'open_owner': 'enki', 'open_orderid': 1691930890, 'open_pays': '45.682 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '260.684 STEEM', 'open_owner': 'zaebars', 'open_orderid': 1489195799, 'open_pays': '19.030 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '488.767 STEEM', 'open_owner': 'paco-steem', 'open_orderid': 667717898, 'open_pays': '35.566 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '139.861 STEEM', 'open_owner': 'penguinpablo', 'open_orderid': 1489182994, 'open_pays': '10.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '3408.811 STEEM', 'open_owner': 'mrosenquist', 'open_orderid': 1489026141, 'open_pays': '238.702 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '1000.000 STEEM', 'open_owner': 'biophil', 'open_orderid': 1488517784, 'open_pays': '70.010 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '30.670 STEEM', 'open_owner': 'cassidyandfranks', 'open_orderid': 1489162628, 'open_pays': '2.147 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '10.000 STEEM', 'open_owner': 'alittle', 'open_orderid': 71, 'open_pays': '0.700 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '700.000 STEEM', 'open_owner': 'bullionstackers', 'open_orderid': 1489065927, 'open_pays': '49.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '204.646 STEEM', 'open_owner': 'chitty', 'open_orderid': 1489184041, 'open_pays': '13.302 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '1000.000 STEEM', 'open_owner': 'infovore', 'open_orderid': 1489155083, 'open_pays': '65.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '10.000 STEEM', 'open_owner': 'alittle', 'open_orderid': 61, 'open_pays': '0.600 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '1000.000 STEEM', 'open_owner': 'alittle', 'open_orderid': 1000800060, 'open_pays': '60.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '100.000 STEEM', 'open_owner': 'ace108', 'open_orderid': 1489072587, 'open_pays': '6.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '1000.000 STEEM', 'open_owner': 'infovore', 'open_orderid': 1489155052, 'open_pays': '60.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '1500.000 STEEM', 'open_owner': 'grandpere', 'open_orderid': 1489180229, 'open_pays': '90.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '8.509 STEEM', 'open_owner': 'schamangerbert', 'open_orderid': 1489073188, 'open_pays': '0.468 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '150.000 STEEM', 'open_owner': 'aunt-deb', 'open_orderid': 1489006696, 'open_pays': '8.250 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '1000.000 STEEM', 'open_owner': 'infovore', 'open_orderid': 1489155033, 'open_pays': '55.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '10.000 STEEM', 'open_owner': 'alittle', 'open_orderid': 51, 'open_pays': '0.500 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '1000.000 STEEM', 'open_owner': 'alittle', 'open_orderid': 1000800050, 'open_pays': '50.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '861.320 STEEM', 'open_owner': 'gavvet', 'open_orderid': 1489152954, 'open_pays': '43.066 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '1000.000 STEEM', 'open_owner': 'infovore', 'open_orderid': 1489154999, 'open_pays': '50.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:12,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489202694, 'current_pays': '100.000 STEEM', 'open_owner': 'infovore', 'open_orderid': 1489155130, 'open_pays': '5.000 SBD'}",0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
-2017-03-11T03:25:15,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '50.000 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1489202694, 'open_pays': '1000.000 STEEM'}",0,7720929c94d0060e700300708990ec6fbb73e9ff
-2017-03-11T03:25:15,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 158013067, 'current_pays': '1.024 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1489202694, 'open_pays': '20.480 STEEM'}",0,13153723e133167239427ff96ae5b65ad8d0783e
-2017-03-11T03:25:18,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 263977153, 'current_pays': '40.616 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1489202694, 'open_pays': '812.320 STEEM'}",0,dd3638adc56d4de1e9033e55a4b1d0de7b210429
-2017-03-11T03:25:21,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 601040395, 'current_pays': '1.556 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1489202694, 'open_pays': '31.120 STEEM'}",0,e43794fae57d7de8b1c8d1604e78c20be50cdb80
-2017-03-11T03:25:24,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '50.000 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1489202694, 'open_pays': '1000.000 STEEM'}",0,ffb4a8c4535eae17508347eea3f60084a58ac7de
-2017-03-11T03:25:24,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 2251848681, 'current_pays': '37.108 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1489202694, 'open_pays': '742.160 STEEM'}",0,21df1cef86221caf40bdf1504d30086094d14f53
-2017-03-11T03:25:30,fill_order,TODO,"{'current_owner': 'adiel', 'current_orderid': 864838397, 'current_pays': '0.245 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1489202694, 'open_pays': '4.900 STEEM'}",0,7725b0de456630dc2141f0f234b856bf85714b77
-2017-03-11T03:25:39,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '0.689 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1489202694, 'open_pays': '13.785 STEEM'}",0,81503553e9ae3290d53b64c1c21909c1a2a57764
+2017-03-11T03:25:12,fill_order,50.0,-670.931,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,7.372,-100.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,45.682,-621.036,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,19.03,-260.684,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,35.566,-488.767,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,10.0,-139.861,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,238.702,-3408.811,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,70.01,-1000.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,2.147,-30.67,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,0.7,-10.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,49.0,-700.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,13.302,-204.646,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,65.0,-1000.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,0.6,-10.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,60.0,-1000.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,6.0,-100.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,60.0,-1000.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,90.0,-1500.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,0.468,-8.509,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,8.25,-150.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,55.0,-1000.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,0.5,-10.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,50.0,-1000.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,43.066,-861.32,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,50.0,-1000.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:12,fill_order,5.0,-100.0,0,0,ae82fd9b88c4b9bed3edc6fbfc65d609ee2bb546
+2017-03-11T03:25:15,fill_order,-1000.0,50.0,0,0,7720929c94d0060e700300708990ec6fbb73e9ff
+2017-03-11T03:25:15,fill_order,-20.48,1.024,0,0,13153723e133167239427ff96ae5b65ad8d0783e
+2017-03-11T03:25:18,fill_order,-812.32,40.616,0,0,dd3638adc56d4de1e9033e55a4b1d0de7b210429
+2017-03-11T03:25:21,fill_order,-31.12,1.556,0,0,e43794fae57d7de8b1c8d1604e78c20be50cdb80
+2017-03-11T03:25:24,fill_order,-1000.0,50.0,0,0,ffb4a8c4535eae17508347eea3f60084a58ac7de
+2017-03-11T03:25:24,fill_order,-742.16,37.108,0,0,21df1cef86221caf40bdf1504d30086094d14f53
+2017-03-11T03:25:30,fill_order,-4.9,0.245,0,0,7725b0de456630dc2141f0f234b856bf85714b77
+2017-03-11T03:25:39,fill_order,-13.785,0.689,0,0,81503553e9ae3290d53b64c1c21909c1a2a57764
 2017-03-11T05:30:03,transfer,348.48,0,0,0,58046db8eced19d768eda6f2e91e39be6dab6a81,211
 2017-03-11T06:05:03,transfer,5.244,0,0,0,e6664c9e2de472705d2406559c45a1f9e9505522,212
 2017-03-11T09:28:48,transfer,0,1999.99,0,0,efd143426fa01cf94d71ae39174dc396a400c5f0,7459125207434872497
-2017-03-11T19:18:09,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489259881, 'current_pays': '50.000 SBD', 'open_owner': 'teamsmooth-mm', 'open_orderid': 2000, 'open_pays': '672.879 STEEM'}",0,92c01f7c53f4d27b386addf0d717d17c977f8006
-2017-03-11T19:30:33,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 2230532230, 'current_pays': '1160.988 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489259881, 'open_pays': '86.270 SBD'}",0,80b8ef36f7c5e94b9a95901ea5dc2e61a95a7644
-2017-03-11T19:30:48,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 4181812860, 'current_pays': '105.545 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489259881, 'open_pays': '7.842 SBD'}",0,9fa3765e4921577d38eac6b8cec06dac6ea2f275
-2017-03-11T19:30:57,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 2490642448, 'current_pays': '9.595 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489259881, 'open_pays': '0.712 SBD'}",0,61a4f3c3c421b530b3ea67231943fca651296ad6
-2017-03-11T19:31:18,fill_order,TODO,"{'current_owner': 'hopf-orbifolds', 'current_orderid': 1489260677, 'current_pays': '24.280 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489259881, 'open_pays': '1.804 SBD'}",0,d51253193f9a36aea424c885beca70dac3e6138c
-2017-03-11T19:31:21,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 2516780484, 'current_pays': '580.930 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489259881, 'open_pays': '43.167 SBD'}",0,4ae5001515da08a2f3b619f7d4aac5a92d2cb293
-2017-03-11T19:31:33,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 939655749, 'current_pays': '52.812 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489259881, 'open_pays': '3.924 SBD'}",0,1693f99f66dbe4af897dfc34ff277a2459aa676f
-2017-03-11T19:31:42,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 3890543089, 'current_pays': '4.801 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489259881, 'open_pays': '0.356 SBD'}",0,4020e3dbb65e708ae2de92b4dec8afb9575f7447
-2017-03-11T19:32:09,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 1939968813, 'current_pays': '290.683 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489259881, 'open_pays': '21.600 SBD'}",0,28f66c94947c2d59c28efb372434da45c33a427c
+2017-03-11T19:18:09,fill_order,672.879,-50.0,0,0,92c01f7c53f4d27b386addf0d717d17c977f8006
+2017-03-11T19:30:33,fill_order,-86.27,1160.988,0,0,80b8ef36f7c5e94b9a95901ea5dc2e61a95a7644
+2017-03-11T19:30:48,fill_order,-7.842,105.545,0,0,9fa3765e4921577d38eac6b8cec06dac6ea2f275
+2017-03-11T19:30:57,fill_order,-0.712,9.595,0,0,61a4f3c3c421b530b3ea67231943fca651296ad6
+2017-03-11T19:31:18,fill_order,-1.804,24.28,0,0,d51253193f9a36aea424c885beca70dac3e6138c
+2017-03-11T19:31:21,fill_order,-43.167,580.93,0,0,4ae5001515da08a2f3b619f7d4aac5a92d2cb293
+2017-03-11T19:31:33,fill_order,-3.924,52.812,0,0,1693f99f66dbe4af897dfc34ff277a2459aa676f
+2017-03-11T19:31:42,fill_order,-0.356,4.801,0,0,4020e3dbb65e708ae2de92b4dec8afb9575f7447
+2017-03-11T19:32:09,fill_order,-21.6,290.683,0,0,28f66c94947c2d59c28efb372434da45c33a427c
 2017-03-11T19:40:33,transfer,0,1121.246,0,0,ee600ce8f8ed74e2697bc1a879db35bf8a20a97b,3121281560688057220
 2017-03-11T19:40:48,transfer,0,2258.252,0,0,115ae078136845e0cb8c32085d29279cdd800544,3121281560688057220
 2017-03-11T19:41:09,transfer,0.465,0,0,0,a9fd4cce349444ddd27fe208b78919169963ba29,3121281560688057220
 2017-03-11T20:02:48,transfer,0,300.0,0,0,71e265a0227cc31a93c50fbe183a415ecf260ee8,7970627426834977430
-2017-03-11T20:20:57,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489263655, 'current_pays': '50.000 SBD', 'open_owner': 'teamsmooth-mm', 'open_orderid': 2000, 'open_pays': '663.950 STEEM'}",0,a93c76b3a90fb7d3fd5fbd4e431926d8b5495efb
-2017-03-11T20:21:03,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 283620034, 'current_pays': '190.525 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '14.347 SBD'}",0,d92bc37c3fd106b53ed432c5379dda45121c4425
-2017-03-11T20:21:06,fill_order,TODO,"{'current_owner': 'ramtech', 'current_orderid': 1489263664, 'current_pays': '12.605 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '0.949 SBD'}",0,64bd3160c9707fd6ba128abbdeb246d1441684ba
-2017-03-11T20:21:15,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 1764259350, 'current_pays': '17.321 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '1.304 SBD'}",0,51e81fa44c1cb56a88f3b6aa5b210ce9ecd1777c
-2017-03-11T20:21:42,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 2600258249, 'current_pays': '532.200 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '40.078 SBD'}",0,3723a892f8d588479899a4829d081a12669106d6
-2017-03-11T20:21:48,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 404400865, 'current_pays': '48.382 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '3.643 SBD'}",0,82f28f62cb3c8eab6baea8d9393b7c9ab3068435
-2017-03-11T20:22:00,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 2846289760, 'current_pays': '4.398 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '0.331 SBD'}",0,d4d48c46a63448d30927a5cd9e146d1f840d9ab8
-2017-03-11T20:22:24,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 3251134484, 'current_pays': '266.300 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '20.054 SBD'}",0,e630373380dea9e092ab4048d77f6ba6197f20bf
-2017-03-11T20:22:33,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 3180741383, 'current_pays': '24.209 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '1.823 SBD'}",0,253180380846d84c27828047fd6966110a3dd529
-2017-03-11T20:22:45,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 4199313354, 'current_pays': '2.201 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '0.165 SBD'}",0,fb554e241c87862ea1d3773f5451299297c78102
-2017-03-11T20:23:09,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 3516979734, 'current_pays': '133.250 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '10.034 SBD'}",0,8417d5a195d4cdba1aea3fec5e8cbddea7a07cba
-2017-03-11T20:23:18,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 1197673680, 'current_pays': '12.114 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '0.912 SBD'}",0,376fc6e579f3aafcaccad6617acabf608fcceea6
-2017-03-11T20:23:45,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 1132387869, 'current_pays': '67.175 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '5.058 SBD'}",0,da4044b5e289e0955e05ae13a49bcdd415ef8223
-2017-03-11T20:23:54,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 4161446345, 'current_pays': '6.107 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '0.459 SBD'}",0,e7956b615627e095319f2bd25a5772f4c36c84ab
-2017-03-11T20:24:18,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 728781321, 'current_pays': '33.865 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '2.550 SBD'}",0,494040706664df6692611a89d1f2ac3c4483b4e2
-2017-03-11T20:24:27,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 3601549810, 'current_pays': '3.079 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1489263655, 'open_pays': '0.231 SBD'}",0,56df58e4f94061f5d710fa1e62f13a18093b80c2
+2017-03-11T20:20:57,fill_order,663.95,-50.0,0,0,a93c76b3a90fb7d3fd5fbd4e431926d8b5495efb
+2017-03-11T20:21:03,fill_order,-14.347,190.525,0,0,d92bc37c3fd106b53ed432c5379dda45121c4425
+2017-03-11T20:21:06,fill_order,-0.949,12.605,0,0,64bd3160c9707fd6ba128abbdeb246d1441684ba
+2017-03-11T20:21:15,fill_order,-1.304,17.321,0,0,51e81fa44c1cb56a88f3b6aa5b210ce9ecd1777c
+2017-03-11T20:21:42,fill_order,-40.078,532.2,0,0,3723a892f8d588479899a4829d081a12669106d6
+2017-03-11T20:21:48,fill_order,-3.643,48.382,0,0,82f28f62cb3c8eab6baea8d9393b7c9ab3068435
+2017-03-11T20:22:00,fill_order,-0.331,4.398,0,0,d4d48c46a63448d30927a5cd9e146d1f840d9ab8
+2017-03-11T20:22:24,fill_order,-20.054,266.3,0,0,e630373380dea9e092ab4048d77f6ba6197f20bf
+2017-03-11T20:22:33,fill_order,-1.823,24.209,0,0,253180380846d84c27828047fd6966110a3dd529
+2017-03-11T20:22:45,fill_order,-0.165,2.201,0,0,fb554e241c87862ea1d3773f5451299297c78102
+2017-03-11T20:23:09,fill_order,-10.034,133.25,0,0,8417d5a195d4cdba1aea3fec5e8cbddea7a07cba
+2017-03-11T20:23:18,fill_order,-0.912,12.114,0,0,376fc6e579f3aafcaccad6617acabf608fcceea6
+2017-03-11T20:23:45,fill_order,-5.058,67.175,0,0,da4044b5e289e0955e05ae13a49bcdd415ef8223
+2017-03-11T20:23:54,fill_order,-0.459,6.107,0,0,e7956b615627e095319f2bd25a5772f4c36c84ab
+2017-03-11T20:24:18,fill_order,-2.55,33.865,0,0,494040706664df6692611a89d1f2ac3c4483b4e2
+2017-03-11T20:24:27,fill_order,-0.231,3.079,0,0,56df58e4f94061f5d710fa1e62f13a18093b80c2
 2017-03-11T20:25:48,transfer,495.761,0,0,0,70633d57c1837f51aea2e8656623dce3eb4a6f64,ddc43dcc6dd34e03948
 2017-03-11T21:00:57,transfer,0,10000.0,0,0,5b7f3eb4152962d165915a47506d3e89ef22079a,3121281560688057220
-2017-03-11T21:49:45,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489268979, 'current_pays': '29.062 STEEM', 'open_owner': 'cassidyandfranks', 'open_orderid': 1489267074, 'open_pays': '2.046 SBD'}",0,27dabecb37b5fbc1de6d2ace5622261b11137957
-2017-03-11T21:49:45,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1489268979, 'current_pays': '685.224 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '48.220 SBD'}",0,27dabecb37b5fbc1de6d2ace5622261b11137957
+2017-03-11T21:49:45,fill_order,2.046,-29.062,0,0,27dabecb37b5fbc1de6d2ace5622261b11137957
+2017-03-11T21:49:45,fill_order,48.22,-685.224,0,0,27dabecb37b5fbc1de6d2ace5622261b11137957
 2017-03-12T06:26:27,fill_vesting_withdraw,0,1474.868 STEEM,0,0000000000000000000000000000000000000000
 2017-03-12T07:37:15,transfer,0,208.603,0,0,a1b51537914622d933587bb2c4297cccd51025b5,4851628855745259509
 2017-03-12T09:38:18,curation_reward,0,0,0,62.425388,0000000000000000000000000000000000000000
@@ -701,16 +701,16 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-03-30T01:28:51,transfer,0,1097.97,0,0,a8c1db05b57df8686dfb3f29d83cb0527b46e431,393
 2017-03-30T01:44:51,transfer,59.4,0,0,0,1da5a388759ee4b01ea8edc539f11d2e05a6ca83,380
 2017-03-30T01:45:51,transfer,158.4,0,0,0,7fcf26b911dd3ae454bb5694101108f396195242,392
-2017-03-30T01:48:09,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1490838481, 'current_pays': '309.721 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '47.209 SBD'}",0,711494d38c3cde35c2a601d491aaddee27254e32
-2017-03-30T01:48:45,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1490838519, 'current_pays': '328.891 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '50.000 SBD'}",0,68a432ad951370708ccca13bc83844cf988036b7
-2017-03-30T01:49:03,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1490838537, 'current_pays': '329.754 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '50.000 SBD'}",0,f979a7917eb4d5f5d35a1799c3375a1cbcd1bc06
-2017-03-30T01:49:24,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1490838555, 'current_pays': '330.620 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '50.000 SBD'}",0,0984d6985a002f52bab2f81362c82d90e4b5709e
-2017-03-30T01:49:39,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 199641613, 'current_pays': '92.488 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1490838555, 'open_pays': '611.567 STEEM'}",0,6c55809f0e5e5b483bafd2a2929e57ccfcc1705d
-2017-03-30T01:49:42,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1490838577, 'current_pays': '278.809 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '42.054 SBD'}",0,f806738a987025e3b94fe4d9133ea9c5ca8387a4
-2017-03-30T01:50:00,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 2573281477, 'current_pays': '57.787 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1490838577, 'open_pays': '383.116 STEEM'}",0,841673eeb0ca6a1c823fd303849a2dfec134bdf1
-2017-03-30T01:50:03,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1490838593, 'current_pays': '332.363 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '50.000 SBD'}",0,28fdb123b981080979e2b153cf4a3fbbd0ed56f7
-2017-03-30T01:50:21,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 3415215282, 'current_pays': '4.990 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1490838593, 'open_pays': '33.170 STEEM'}",0,f22a636fe62e55d99d9a4f6d6b4e6f682305bcfb
-2017-03-30T01:50:39,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 730771773, 'current_pays': '0.008 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1490838577, 'open_pays': '0.053 STEEM'}",0,39a16ffcf7083f7c7f326867be895ebb0f0bfbf3
+2017-03-30T01:48:09,fill_order,47.209,-309.721,0,0,711494d38c3cde35c2a601d491aaddee27254e32
+2017-03-30T01:48:45,fill_order,50.0,-328.891,0,0,68a432ad951370708ccca13bc83844cf988036b7
+2017-03-30T01:49:03,fill_order,50.0,-329.754,0,0,f979a7917eb4d5f5d35a1799c3375a1cbcd1bc06
+2017-03-30T01:49:24,fill_order,50.0,-330.62,0,0,0984d6985a002f52bab2f81362c82d90e4b5709e
+2017-03-30T01:49:39,fill_order,-611.567,92.488,0,0,6c55809f0e5e5b483bafd2a2929e57ccfcc1705d
+2017-03-30T01:49:42,fill_order,42.054,-278.809,0,0,f806738a987025e3b94fe4d9133ea9c5ca8387a4
+2017-03-30T01:50:00,fill_order,-383.116,57.787,0,0,841673eeb0ca6a1c823fd303849a2dfec134bdf1
+2017-03-30T01:50:03,fill_order,50.0,-332.363,0,0,28fdb123b981080979e2b153cf4a3fbbd0ed56f7
+2017-03-30T01:50:21,fill_order,-33.17,4.99,0,0,f22a636fe62e55d99d9a4f6d6b4e6f682305bcfb
+2017-03-30T01:50:39,fill_order,-0.053,0.008,0,0,39a16ffcf7083f7c7f326867be895ebb0f0bfbf3
 2017-03-30T01:58:21,curation_reward,0,0,0,87.318453,0000000000000000000000000000000000000000
 2017-03-30T03:38:51,curation_reward,0,0,0,663.20212,0000000000000000000000000000000000000000
 2017-03-30T03:53:09,transfer,0,400.0,0,0,bcb33233126133165a1b8b49fcca2443636691c9,7970627426834977430
@@ -960,50 +960,50 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-04-12T00:42:30,curation_reward,0,0,0,64.406905,0000000000000000000000000000000000000000
 2017-04-12T01:28:45,curation_reward,0,0,0,72.717353,0000000000000000000000000000000000000000
 2017-04-12T03:20:12,curation_reward,0,0,0,37.397346,0000000000000000000000000000000000000000
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '331.486 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '50.000 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '331.489 STEEM', 'open_owner': 'fumansiu', 'open_orderid': 1491970807, 'open_pays': '50.000 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '13.953 STEEM', 'open_owner': 'gutzofter', 'open_orderid': 1491955083, 'open_pays': '2.047 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '104.433 STEEM', 'open_owner': 'blakemiles84', 'open_orderid': 1491960594, 'open_pays': '15.321 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '0.082 STEEM', 'open_owner': 'joanawatts', 'open_orderid': 1491898377, 'open_pays': '0.012 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '53.334 STEEM', 'open_owner': 'ace108', 'open_orderid': 1491691660, 'open_pays': '7.793 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '5.758 STEEM', 'open_owner': 'havok777', 'open_orderid': 1491518574, 'open_pays': '0.835 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '10.613 STEEM', 'open_owner': 'qonq99', 'open_orderid': 1490996086, 'open_pays': '1.539 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '30.433 STEEM', 'open_owner': 'qonq99', 'open_orderid': 1490957132, 'open_pays': '4.353 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '250.000 STEEM', 'open_owner': 'nikolai', 'open_orderid': 1490902858, 'open_pays': '35.758 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:33,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971849, 'current_pays': '6.135 STEEM', 'open_owner': 'funkit', 'open_orderid': 1491902582, 'open_pays': '0.859 SBD'}",0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
-2017-04-12T04:37:36,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '50.000 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '357.102 STEEM'}",0,9dfc145c30cf79a91b28b9b855d05c49b1c3e59e
-2017-04-12T04:37:36,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 688879665, 'current_pays': '3.217 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '22.975 STEEM'}",0,9a92636d9ea09f830a0f4433405175a139a592d0
-2017-04-12T04:37:42,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 3835353285, 'current_pays': '1.255 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '8.963 STEEM'}",0,2e02dd7bdd0fd8ba869a8019586ee4ed3dac370a
-2017-04-12T04:37:45,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '50.000 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '357.102 STEEM'}",0,91792c8029260b059ddcf2587e9ee2bfcd063166
-2017-04-12T04:37:48,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 3057123116, 'current_pays': '46.063 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '328.984 STEEM'}",0,210b78c927f83ed7fb01b5dd804ff6ed7b0b3667
-2017-04-12T04:37:54,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '50.000 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '357.102 STEEM'}",0,b1ecb671c3fa11d1c0de3bc1123b979dc215f7af
-2017-04-12T04:37:54,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 131009429, 'current_pays': '280.098 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '2000.472 STEEM'}",0,f5e8414c8fc73cd5ab42303a928701f3557a217b
-2017-04-12T04:37:54,fill_order,TODO,"{'current_owner': 'adiel', 'current_orderid': 364594805, 'current_pays': '6.909 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '49.344 STEEM'}",0,cd8f08eef1ff5e039504413f546bc473b017242d
-2017-04-12T04:38:00,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 3873744399, 'current_pays': '24.624 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '175.865 STEEM'}",0,2a66e499ba1b03f83b2d85ac73c1624efd0c5c6f
-2017-04-12T04:38:06,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 217137703, 'current_pays': '2.820 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '20.140 STEEM'}",0,4685646db380419832f26861bd26d0c35368e724
-2017-04-12T04:38:09,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '50.000 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '357.102 STEEM'}",0,9babf46d420c6978e3b04d9f98e2f5e87d14ea4b
-2017-04-12T04:38:12,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 3363277853, 'current_pays': '18.088 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971849, 'open_pays': '129.185 STEEM'}",0,ecc9e9e600eb0d8ea87d0eabdf174791f9957c6e
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '335.982 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '50.000 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '8.342 STEEM', 'open_owner': 'fminerten1', 'open_orderid': 1490773269, 'open_pays': '1.168 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '42.858 STEEM', 'open_owner': 'hammaraxx', 'open_orderid': 1491035611, 'open_pays': '6.000 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '31.758 STEEM', 'open_owner': 'autonomygarden', 'open_orderid': 1490902059, 'open_pays': '4.446 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '0.101 STEEM', 'open_owner': 'joanawatts', 'open_orderid': 1490731832, 'open_pays': '0.014 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '99.320 STEEM', 'open_owner': 'enki', 'open_orderid': 3816943669, 'open_pays': '13.101 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '150.000 STEEM', 'open_owner': 'ancap47', 'open_orderid': 1491784113, 'open_pays': '19.500 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '611.685 STEEM', 'open_owner': 'inphiknit', 'open_orderid': 1491550236, 'open_pays': '76.800 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '238.949 STEEM', 'open_owner': 'freebornangel', 'open_orderid': 1491326649, 'open_pays': '30.000 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '25.630 STEEM', 'open_owner': 'gutzofter', 'open_orderid': 1491494674, 'open_pays': '3.204 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:36,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1491971913, 'current_pays': '47.998 STEEM', 'open_owner': 'gutzofter', 'open_orderid': 1490721333, 'open_pays': '6.000 SBD'}",0,2ef55c2b51af600950f543f04b2fcff3a4506625
-2017-04-12T04:38:39,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 326233950, 'current_pays': '16.185 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '129.475 STEEM'}",0,383a616b84ea776d199717899cd782277fcd9165
-2017-04-12T04:38:42,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '50.000 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '399.984 STEEM'}",0,c1349de6ad8610ba9390fe6bd76c86ed4563acb8
-2017-04-12T04:38:42,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 1461296190, 'current_pays': '8.538 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '68.301 STEEM'}",0,240fb5f7322287db38dc906fcbb6a63d92f9f165
-2017-04-12T04:38:45,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 3617502554, 'current_pays': '5.266 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '42.126 STEEM'}",0,67ee5cbd692f86e1339086cd2bee5f0577d00753
-2017-04-12T04:38:45,fill_order,TODO,"{'current_owner': 'adiel', 'current_orderid': 2060737204, 'current_pays': '0.668 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '5.343 STEEM'}",0,9ce045548adef68d412087786f00fee4ffb467c5
-2017-04-12T04:38:54,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '50.000 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '399.984 STEEM'}",0,3ff74dbac8b0d7ff2e06490c1580d552a9fe0376
-2017-04-12T04:38:54,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 1807722169, 'current_pays': '6.594 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '52.749 STEEM'}",0,38aa9e75027760a2968f5adc90834b459f094427
-2017-04-12T04:39:00,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 532279487, 'current_pays': '4.629 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '37.030 STEEM'}",0,5228841a041bbbcc77da94d045cf86868e48cd45
-2017-04-12T04:39:06,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 1000, 'current_pays': '50.000 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '399.984 STEEM'}",0,f9bce9add3084eef54b7385cefea1d15185bebc5
-2017-04-12T04:39:06,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 2774121560, 'current_pays': '205.027 SBD', 'open_owner': 'tradeqwik', 'open_orderid': 1491971913, 'open_pays': '1640.153 STEEM'}",0,8e16cafcc6d514fef0593e078994d817a9b44b44
+2017-04-12T04:37:33,fill_order,50.0,-331.486,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,50.0,-331.489,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,2.047,-13.953,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,15.321,-104.433,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,0.012,-0.082,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,7.793,-53.334,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,0.835,-5.758,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,1.539,-10.613,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,4.353,-30.433,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,35.758,-250.0,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:33,fill_order,0.859,-6.135,0,0,a2a5ad710836a933da8d6ca86571e941bc9b53aa
+2017-04-12T04:37:36,fill_order,-357.102,50.0,0,0,9dfc145c30cf79a91b28b9b855d05c49b1c3e59e
+2017-04-12T04:37:36,fill_order,-22.975,3.217,0,0,9a92636d9ea09f830a0f4433405175a139a592d0
+2017-04-12T04:37:42,fill_order,-8.963,1.255,0,0,2e02dd7bdd0fd8ba869a8019586ee4ed3dac370a
+2017-04-12T04:37:45,fill_order,-357.102,50.0,0,0,91792c8029260b059ddcf2587e9ee2bfcd063166
+2017-04-12T04:37:48,fill_order,-328.984,46.063,0,0,210b78c927f83ed7fb01b5dd804ff6ed7b0b3667
+2017-04-12T04:37:54,fill_order,-357.102,50.0,0,0,b1ecb671c3fa11d1c0de3bc1123b979dc215f7af
+2017-04-12T04:37:54,fill_order,-2000.472,280.098,0,0,f5e8414c8fc73cd5ab42303a928701f3557a217b
+2017-04-12T04:37:54,fill_order,-49.344,6.909,0,0,cd8f08eef1ff5e039504413f546bc473b017242d
+2017-04-12T04:38:00,fill_order,-175.865,24.624,0,0,2a66e499ba1b03f83b2d85ac73c1624efd0c5c6f
+2017-04-12T04:38:06,fill_order,-20.14,2.82,0,0,4685646db380419832f26861bd26d0c35368e724
+2017-04-12T04:38:09,fill_order,-357.102,50.0,0,0,9babf46d420c6978e3b04d9f98e2f5e87d14ea4b
+2017-04-12T04:38:12,fill_order,-129.185,18.088,0,0,ecc9e9e600eb0d8ea87d0eabdf174791f9957c6e
+2017-04-12T04:38:36,fill_order,50.0,-335.982,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,1.168,-8.342,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,6.0,-42.858,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,4.446,-31.758,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,0.014,-0.101,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,13.101,-99.32,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,19.5,-150.0,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,76.8,-611.685,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,30.0,-238.949,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,3.204,-25.63,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:36,fill_order,6.0,-47.998,0,0,2ef55c2b51af600950f543f04b2fcff3a4506625
+2017-04-12T04:38:39,fill_order,-129.475,16.185,0,0,383a616b84ea776d199717899cd782277fcd9165
+2017-04-12T04:38:42,fill_order,-399.984,50.0,0,0,c1349de6ad8610ba9390fe6bd76c86ed4563acb8
+2017-04-12T04:38:42,fill_order,-68.301,8.538,0,0,240fb5f7322287db38dc906fcbb6a63d92f9f165
+2017-04-12T04:38:45,fill_order,-42.126,5.266,0,0,67ee5cbd692f86e1339086cd2bee5f0577d00753
+2017-04-12T04:38:45,fill_order,-5.343,0.668,0,0,9ce045548adef68d412087786f00fee4ffb467c5
+2017-04-12T04:38:54,fill_order,-399.984,50.0,0,0,3ff74dbac8b0d7ff2e06490c1580d552a9fe0376
+2017-04-12T04:38:54,fill_order,-52.749,6.594,0,0,38aa9e75027760a2968f5adc90834b459f094427
+2017-04-12T04:39:00,fill_order,-37.03,4.629,0,0,5228841a041bbbcc77da94d045cf86868e48cd45
+2017-04-12T04:39:06,fill_order,-399.984,50.0,0,0,f9bce9add3084eef54b7385cefea1d15185bebc5
+2017-04-12T04:39:06,fill_order,-1640.153,205.027,0,0,8e16cafcc6d514fef0593e078994d817a9b44b44
 2017-04-12T05:13:45,curation_reward,0,0,0,257.625114,0000000000000000000000000000000000000000
 2017-04-12T06:54:03,curation_reward,0,0,0,120.501634,0000000000000000000000000000000000000000
 2017-04-12T07:34:33,curation_reward,0,0,0,201.528302,0000000000000000000000000000000000000000
@@ -1083,15 +1083,15 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-04-15T19:55:24,curation_reward,0,0,0,261.731254,0000000000000000000000000000000000000000
 2017-04-15T20:08:42,transfer,181.846,0,0,0,3b627d8c273c1ca1c8d1b4f2b7d734df17e3bc80,3121281560688057220
 2017-04-15T20:08:42,interest,0.299,0,0,3b627d8c273c1ca1c8d1b4f2b7d734df17e3bc80
-2017-04-15T20:10:18,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1492287014, 'current_pays': '50.000 SBD', 'open_owner': 'teamsmooth-mm', 'open_orderid': 2000, 'open_pays': '259.875 STEEM'}",0,880c8c80daa2c300f05e10f752be9bcea9d180ab
-2017-04-15T20:10:18,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1492287014, 'current_pays': '8.221 SBD', 'open_owner': 'penguinpablo', 'open_orderid': 1492281219, 'open_pays': '41.974 STEEM'}",0,880c8c80daa2c300f05e10f752be9bcea9d180ab
-2017-04-15T20:10:18,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1492287014, 'current_pays': '109.065 SBD', 'open_owner': 'churdtzu', 'open_orderid': 1492280271, 'open_pays': '556.842 STEEM'}",0,880c8c80daa2c300f05e10f752be9bcea9d180ab
-2017-04-15T20:10:18,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1492287014, 'current_pays': '8.511 SBD', 'open_owner': 'rigaronib', 'open_orderid': 1492270478, 'open_pays': '42.555 STEEM'}",0,880c8c80daa2c300f05e10f752be9bcea9d180ab
-2017-04-15T20:10:18,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1492287014, 'current_pays': '0.121 SBD', 'open_owner': 'technocomanche', 'open_orderid': 1490135810, 'open_pays': '0.600 STEEM'}",0,880c8c80daa2c300f05e10f752be9bcea9d180ab
-2017-04-15T20:10:18,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1492287014, 'current_pays': '1.000 SBD', 'open_owner': 'hykert', 'open_orderid': 1489969461, 'open_pays': '4.927 STEEM'}",0,880c8c80daa2c300f05e10f752be9bcea9d180ab
-2017-04-15T20:10:21,fill_order,TODO,"{'current_owner': 'enki', 'current_orderid': 624144988, 'current_pays': '5.747 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1492287014, 'open_pays': '1.166 SBD'}",0,ffb47a85bf06c15706d2ae1a43d50b215651c2ce
-2017-04-15T20:10:21,fill_order,TODO,"{'current_owner': 'paco-steem', 'current_orderid': 3763840321, 'current_pays': '116.662 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1492287014, 'open_pays': '23.678 SBD'}",0,02e145e2be40536f5773e8c4fc2db869f09ead98
-2017-04-15T20:10:24,fill_order,TODO,"{'current_owner': 'teamsmooth-mm', 'current_orderid': 2000, 'current_pays': '5.922 STEEM', 'open_owner': 'tradeqwik', 'open_orderid': 1492287014, 'open_pays': '1.202 SBD'}",0,07b4e80c61dd153ae189475f0220502bee517feb
+2017-04-15T20:10:18,fill_order,259.875,-50.0,0,0,880c8c80daa2c300f05e10f752be9bcea9d180ab
+2017-04-15T20:10:18,fill_order,41.974,-8.221,0,0,880c8c80daa2c300f05e10f752be9bcea9d180ab
+2017-04-15T20:10:18,fill_order,556.842,-109.065,0,0,880c8c80daa2c300f05e10f752be9bcea9d180ab
+2017-04-15T20:10:18,fill_order,42.555,-8.511,0,0,880c8c80daa2c300f05e10f752be9bcea9d180ab
+2017-04-15T20:10:18,fill_order,0.6,-0.121,0,0,880c8c80daa2c300f05e10f752be9bcea9d180ab
+2017-04-15T20:10:18,fill_order,4.927,-1.0,0,0,880c8c80daa2c300f05e10f752be9bcea9d180ab
+2017-04-15T20:10:21,fill_order,-1.166,5.747,0,0,ffb47a85bf06c15706d2ae1a43d50b215651c2ce
+2017-04-15T20:10:21,fill_order,-23.678,116.662,0,0,02e145e2be40536f5773e8c4fc2db869f09ead98
+2017-04-15T20:10:24,fill_order,-1.202,5.922,0,0,07b4e80c61dd153ae189475f0220502bee517feb
 2017-04-15T20:39:54,transfer,0,380.0,0,0,d13fcb6d708b1f666793e5f6a164968c056fce92,459
 2017-04-15T20:40:00,claim_reward_balance,0.045,0.07,n/a,21704.332094,3aab01e12fcb26061a14704178687cafbe36a03e
 2017-04-15T21:09:03,curation_reward,0,0,0,467.376001,0000000000000000000000000000000000000000
@@ -1660,49 +1660,49 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-04-30T10:08:06,transfer,0,800.0,0,0,01278e4bbbd21d6622a0ef1d498f3c6f09124c0c,1658864895034939621
 2017-04-30T10:30:03,curation_reward,0,0,0,186.807671,0000000000000000000000000000000000000000
 2017-04-30T10:58:51,curation_reward,0,0,0,601.935192,0000000000000000000000000000000000000000
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '238.215 STEEM', 'open_owner': 'teamsmooth-mm', 'open_orderid': 1000, 'open_pays': '50.000 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '59.560 STEEM', 'open_owner': 'whatsup', 'open_orderid': 1493549941, 'open_pays': '11.931 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '5.390 STEEM', 'open_owner': 'qonq99', 'open_orderid': 1493450897, 'open_pays': '1.078 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '85.630 STEEM', 'open_owner': 'qonq99', 'open_orderid': 1493462094, 'open_pays': '17.126 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '6.965 STEEM', 'open_owner': 'qonq99', 'open_orderid': 1493545868, 'open_pays': '1.393 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '0.388 STEEM', 'open_owner': 'havok777', 'open_orderid': 1493354420, 'open_pays': '0.077 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '17.107 STEEM', 'open_owner': 'unipsycho', 'open_orderid': 1493504919, 'open_pays': '3.259 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '40.000 STEEM', 'open_owner': 'ace108', 'open_orderid': 1493501969, 'open_pays': '7.604 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '362.115 STEEM', 'open_owner': 'always1success', 'open_orderid': 1493508408, 'open_pays': '68.804 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '111.910 STEEM', 'open_owner': 'unipsycho', 'open_orderid': 1493442769, 'open_pays': '21.263 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '608.466 STEEM', 'open_owner': 'sirlunchthehost', 'open_orderid': 1493398105, 'open_pays': '115.000 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '13.137 STEEM', 'open_owner': 'heavenlly', 'open_orderid': 1493301055, 'open_pays': '2.481 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '105.902 STEEM', 'open_owner': 'sabinson6', 'open_orderid': 1493397645, 'open_pays': '20.000 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '1.625 STEEM', 'open_owner': 'havok777', 'open_orderid': 1493515589, 'open_pays': '0.304 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '1.621 STEEM', 'open_owner': 'havok777', 'open_orderid': 1493299992, 'open_pays': '0.300 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '17.538 STEEM', 'open_owner': 'ogoowinner', 'open_orderid': 1493432525, 'open_pays': '3.157 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '0.448 STEEM', 'open_owner': 'technocomanche', 'open_orderid': 1493291095, 'open_pays': '0.080 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '0.524 STEEM', 'open_owner': 'technocomanche', 'open_orderid': 1493362768, 'open_pays': '0.093 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '181.717 STEEM', 'open_owner': 'richard-921', 'open_orderid': 1493295628, 'open_pays': '32.164 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '5.147 STEEM', 'open_owner': 'havok777', 'open_orderid': 1493479964, 'open_pays': '0.906 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '519.930 STEEM', 'open_owner': 'inphiknit', 'open_orderid': 1493175173, 'open_pays': '90.000 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '3800.000 STEEM', 'open_owner': 'konelectric', 'open_orderid': 1493464533, 'open_pays': '657.400 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '115.607 STEEM', 'open_owner': 'nonameslefttouse', 'open_orderid': 1493496304, 'open_pays': '20.000 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '696.040 STEEM', 'open_owner': 'gutzofter', 'open_orderid': 1493170111, 'open_pays': '120.000 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '26.409 STEEM', 'open_owner': 'enki', 'open_orderid': 581468664, 'open_pays': '4.553 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '52.770 STEEM', 'open_owner': 'melek', 'open_orderid': 1493225301, 'open_pays': '8.971 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '625.000 STEEM', 'open_owner': 'surpassinggoogle', 'open_orderid': 1493255243, 'open_pays': '100.000 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '333.334 STEEM', 'open_owner': 'surpassinggoogle', 'open_orderid': 1493216525, 'open_pays': '52.001 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '0.870 STEEM', 'open_owner': 'havok777', 'open_orderid': 1493162823, 'open_pays': '0.135 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '24.286 STEEM', 'open_owner': 'leongkhan', 'open_orderid': 1493161499, 'open_pays': '3.643 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '5.000 STEEM', 'open_owner': 'playfulfoodie', 'open_orderid': 1493133621, 'open_pays': '0.744 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '36.022 STEEM', 'open_owner': 'enki', 'open_orderid': 2336600985, 'open_pays': '5.353 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '80.000 STEEM', 'open_owner': 'ace108', 'open_orderid': 1493137235, 'open_pays': '11.823 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '0.165 STEEM', 'open_owner': 'havok777', 'open_orderid': 1493144384, 'open_pays': '0.024 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '214.286 STEEM', 'open_owner': 'freebornangel', 'open_orderid': 1493237409, 'open_pays': '30.000 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '150.000 STEEM', 'open_owner': 'ancap47', 'open_orderid': 1492348097, 'open_pays': '20.250 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '80.000 STEEM', 'open_owner': 'ace108', 'open_orderid': 1492436785, 'open_pays': '10.792 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '6.148 STEEM', 'open_owner': 'technocomanche', 'open_orderid': 1493116720, 'open_pays': '0.800 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '711.250 STEEM', 'open_owner': 'leongkhan', 'open_orderid': 1492518141, 'open_pays': '85.350 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '25.345 STEEM', 'open_owner': 'novina', 'open_orderid': 1490699884, 'open_pays': '2.817 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '80.000 STEEM', 'open_owner': 'ace108', 'open_orderid': 1491980874, 'open_pays': '8.889 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '406.736 STEEM', 'open_owner': 'corinnestokes', 'open_orderid': 1490670203, 'open_pays': '43.928 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
-2017-04-30T11:05:06,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493550295, 'current_pays': '147.397 STEEM', 'open_owner': 'freebornangel', 'open_orderid': 1490998693, 'open_pays': '15.476 SBD'}",0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,50.0,-238.215,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,11.931,-59.56,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,1.078,-5.39,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,17.126,-85.63,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,1.393,-6.965,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.077,-0.388,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,3.259,-17.107,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,7.604,-40.0,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,68.804,-362.115,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,21.263,-111.91,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,115.0,-608.466,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,2.481,-13.137,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,20.0,-105.902,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.304,-1.625,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.3,-1.621,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,3.157,-17.538,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.08,-0.448,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.093,-0.524,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,32.164,-181.717,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.906,-5.147,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,90.0,-519.93,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,657.4,-3800.0,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,20.0,-115.607,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,120.0,-696.04,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,4.553,-26.409,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,8.971,-52.77,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,100.0,-625.0,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,52.001,-333.334,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.135,-0.87,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,3.643,-24.286,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.744,-5.0,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,5.353,-36.022,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,11.823,-80.0,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.024,-0.165,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,30.0,-214.286,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,20.25,-150.0,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,10.792,-80.0,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,0.8,-6.148,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,85.35,-711.25,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,2.817,-25.345,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,8.889,-80.0,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,43.928,-406.736,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
+2017-04-30T11:05:06,fill_order,15.476,-147.397,0,0,40e78a380c26843aa68beeb9d609ed26b9f0473a
 2017-04-30T11:06:15,claim_reward_balance,0.0,0.0,n/a,927.810991,77cf19137cd03d0896ce68d654947dd1f91a2568
 2017-04-30T11:29:06,curation_reward,0,0,0,620.61525,0000000000000000000000000000000000000000
 2017-04-30T11:54:48,transfer,1.218,0,0,0,abc656bf933b307c5fbb1c0ba3bbb7d6bdea7a43,43657
@@ -1860,28 +1860,28 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-05-02T12:49:45,curation_reward,0,0,0,219.993576,0000000000000000000000000000000000000000
 2017-05-02T13:05:36,curation_reward,0,0,0,452.439357,0000000000000000000000000000000000000000
 2017-05-02T13:09:33,curation_reward,0,0,0,579.039276,0000000000000000000000000000000000000000
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '42.247 SBD', 'open_owner': 'teamsmooth-mm', 'open_orderid': 2000, 'open_pays': '208.429 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '2.097 SBD', 'open_owner': 'qonq99', 'open_orderid': 1493724919, 'open_pays': '10.207 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '9.230 SBD', 'open_owner': 'sabinson6', 'open_orderid': 1493672568, 'open_pays': '43.436 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '2.125 SBD', 'open_owner': 'qonq99', 'open_orderid': 1493712842, 'open_pays': '10.000 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '2.125 SBD', 'open_owner': 'qonq99', 'open_orderid': 1493718680, 'open_pays': '10.000 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '84.115 SBD', 'open_owner': 'always1success', 'open_orderid': 1493725346, 'open_pays': '389.983 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '27.828 SBD', 'open_owner': 'unipsycho', 'open_orderid': 1493683609, 'open_pays': '129.017 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '313.914 SBD', 'open_owner': 'elmetro', 'open_orderid': 1493665607, 'open_pays': '1454.656 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '2.194 SBD', 'open_owner': 'qonq99', 'open_orderid': 1493674364, 'open_pays': '10.000 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '0.052 SBD', 'open_owner': 'jmehta', 'open_orderid': 1493653627, 'open_pays': '0.237 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '1.766 SBD', 'open_owner': 'alol', 'open_orderid': 1493652402, 'open_pays': '8.000 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '2.415 SBD', 'open_owner': 'qonq99', 'open_orderid': 1493649564, 'open_pays': '10.784 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '3.875 SBD', 'open_owner': 'qonq99', 'open_orderid': 1493542582, 'open_pays': '16.561 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '27.052 SBD', 'open_owner': 'nonameslefttouse', 'open_orderid': 1493575761, 'open_pays': '115.607 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '7.020 SBD', 'open_owner': 'qonq99', 'open_orderid': 1493559778, 'open_pays': '30.000 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '2.340 SBD', 'open_owner': 'qonq99', 'open_orderid': 1493636506, 'open_pays': '10.000 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '0.912 SBD', 'open_owner': 'contextualize', 'open_orderid': 1493528461, 'open_pays': '3.897 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '81.155 SBD', 'open_owner': 'always1success', 'open_orderid': 1493660565, 'open_pays': '339.624 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '4.019 SBD', 'open_owner': 'surpassinggoogle', 'open_orderid': 1493479442, 'open_pays': '16.750 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '4.799 SBD', 'open_owner': 'qonq99', 'open_orderid': 1493481142, 'open_pays': '20.000 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '23.995 SBD', 'open_owner': 'freebornangel', 'open_orderid': 1493581651, 'open_pays': '100.000 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
-2017-05-02T13:10:39,fill_order,TODO,"{'current_owner': 'tradeqwik', 'current_orderid': 1493730627, 'current_pays': '255.466 SBD', 'open_owner': 'dana-edwards', 'open_orderid': 1492266153, 'open_pays': '1064.441 STEEM'}",0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,208.429,-42.247,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,10.207,-2.097,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,43.436,-9.23,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,10.0,-2.125,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,10.0,-2.125,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,389.983,-84.115,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,129.017,-27.828,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,1454.656,-313.914,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,10.0,-2.194,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,0.237,-0.052,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,8.0,-1.766,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,10.784,-2.415,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,16.561,-3.875,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,115.607,-27.052,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,30.0,-7.02,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,10.0,-2.34,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,3.897,-0.912,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,339.624,-81.155,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,16.75,-4.019,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,20.0,-4.799,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,100.0,-23.995,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
+2017-05-02T13:10:39,fill_order,1064.441,-255.466,0,0,d78bfad50303ad29aaf4f631c3a9bcc10a29fabc
 2017-05-02T13:21:42,curation_reward,0,0,0,809.409381,0000000000000000000000000000000000000000
 2017-05-02T14:00:48,curation_reward,0,0,0,489.795743,0000000000000000000000000000000000000000
 2017-05-02T14:22:09,curation_reward,0,0,0,574.886927,0000000000000000000000000000000000000000
@@ -2180,3 +2180,12 @@ Date,TransactionType,SBD,Steem,SteemPower,Vests,TransactionID,Memo
 2017-05-08T14:59:51,transfer,0,60.0,0,0,91a319671bf34c3825038d2fb0bc7fca2d207864,8835618325791593508
 2017-05-08T15:09:15,transfer,0,100.0,0,0,79267e537a82726a8e64c9d9977b6059ecd1a10c,2318759974563821959
 2017-05-08T15:15:15,curation_reward,0,0,0,1663.941217,0000000000000000000000000000000000000000
+2017-05-08T15:22:06,transfer,0,81.0,0,0,760956bf5186596fcf680dbcd3a44bf4b0084b9e,6867810041709319427
+2017-05-08T15:23:21,transfer,0,1.0,0,0,360cf5de306375e19e326c6d2a0d8edae242bc24,6730158016369856923
+2017-05-08T15:27:00,transfer,0,107.431,0,0,4e82cf9d62ff84b30b8ade79e9efd33ac0e4b38d,6730158016369856923
+2017-05-08T15:32:30,transfer,0,191.712,0,0,b45035b2b1b7180dc0f4fd7e4332473426cfe621,6730158016369856923
+2017-05-08T15:40:54,curation_reward,0,0,0,2749.027485,0000000000000000000000000000000000000000
+2017-05-08T15:49:36,transfer,0,0.232,0,0,01d30f479e7db630b0c5515450973aa6052176fc,2472928704381676369
+2017-05-08T15:51:39,transfer,0,45.113,0,0,390aefffd041fadd6a318a085fe3b50c048f401e,6730158016369856923
+2017-05-08T16:08:09,curation_reward,0,0,0,495.86182,0000000000000000000000000000000000000000
+2017-05-08T16:10:51,curation_reward,0,0,0,529.057538,0000000000000000000000000000000000000000
