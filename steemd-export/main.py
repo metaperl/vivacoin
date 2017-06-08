@@ -1,22 +1,30 @@
 # -*- coding: utf-8 -*-
 
+# Core
 import csv
-
 import pprint
+
+# 3rd Party
+import argh
 from steem import Steem
 from steem.amount import Amount
 
+# Local
 
-acct = 'tradeqwik'
 
-s = Steem()
+
+
+
+# acct = 'tradeqwik'
+
+# s = Steem()
 # pprint(s.get_account(acct))
 
-top_record = s.get_account_history(acct, index_from=-1, limit=0)
+# top_record = s.get_account_history(acct, index_from=-1, limit=0)
 
-top_index = top_record[0][0]
+# top_index = top_record[0][0]
 
-print(top_index)
+# print(top_index)
 
 
 class Transaction(object):
@@ -27,10 +35,10 @@ class Transaction(object):
 
     def __str__(self):
         return pprint.pformat(self.record)
-    
+
     def __repr__(self):
         return self.__str__()
-            
+
     @property
     def u(self):
         return u''
@@ -46,10 +54,10 @@ class Transaction(object):
     @property
     def operation(self):
         return self.info['op']
-    
+
     @property
     def operation_detail(self):
-        return self.operation[1]   
+        return self.operation[1]
 
     @property
     def operation_amount(self):
@@ -66,9 +74,9 @@ class Transaction(object):
     @property
     def memo(self):
         return self.u + self.operation[1]['memo']
-    
+
     currency_index = dict(SBD=0, STEEM=1, SP=2)
-    
+
     def amount2currencyfields(self):
         amount = Amount(self.operation_detail['amount'])
         retval = [0, 0, 0, 0]
@@ -77,7 +85,7 @@ class Transaction(object):
 
     def build(self):
         return [self.timestamp, self.transaction_type] + self.currency_fields + [self.transaction_id, self.memo]
-            
+
     def reward2currencyfields(self, concat):
         retval = list()
         for t in self.reward_fields:
@@ -88,24 +96,24 @@ class Transaction(object):
             m = Amount(self.operation_detail[l]).amount
             retval.append(m)
         return retval
-    
+
 class MNoMemo(object):
     def build(self):
         return [self.timestamp, self.transaction_type] + self.currency_fields + [self.transaction_id]
-            
+
 class Transfer(Transaction):
     @property
     def currency_fields(self):
         return self.amount2currencyfields()
-            
+
 class FillVestingWithdraw(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
         return [0, self.operation_detail['deposited'], 0]
-    
+
 class ClaimRewardBalance(MNoMemo, Transaction):
-    
+
     @property
     def reward_fields(self):
         return "sbd steem steem_power vests".split()
@@ -118,44 +126,44 @@ class CurationReward(MNoMemo, Transaction):
     @property
     def currency_fields(self):
         return [0, 0, 0, Amount(self.operation_detail['reward']).amount]
-    
+
 class AuthorReward(MNoMemo, Transaction):
     @property
     def reward_fields(self):
         return "sbd steem steem_power vesting".split()
-    
+
     @property
     def currency_fields(self):
         return self.reward2currencyfields(lambda t: '{}_payout'.format(t))
-    
+
 class FillOrder(MNoMemo, Transaction):
 
     def pay_logic(self, label_prefix):
-        
+
         def get(label_suffix):
             return self.operation_detail["{}_{}".format(label_prefix, label_suffix)]
-        
+
         owner = get('owner')
         amount = Amount(get('pays')).amount
-        
+
         return -1*amount if owner == 'tradeqwik' else amount
-        
+
     @property
     def currency_fields(self):
         return [self.pay_logic('open'), self.pay_logic('current'), 0, 0]
-     
+
 class Interest(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
         return [Amount(self.operation_detail[self.op]).amount, 0, 0]
-    
+
 class WithdrawVesting(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return [0, 0, Amount(self.operation_detail['vesting_shares']).amount]    
-            
+        return [0, 0, Amount(self.operation_detail['vesting_shares']).amount]
+
 class TransferToVesting(MNoMemo, Transaction):
 
     @property
@@ -164,19 +172,19 @@ class TransferToVesting(MNoMemo, Transaction):
 
 
 class Unknown(Transaction):
-    
+
     def build(self):
         # currency_fields = [0, 0 , 0, 0]
         info = self.u + pprint.pformat(self.info).replace('\n', ' ')
-        return [self.timestamp, self.transaction_type, "TODO", info]   
-    
+        return [self.timestamp, self.transaction_type, "TODO", info]
+
 class Ignore(Transaction):
-    
+
     def build(self):
         # currency_fields = [0, 0 , 0, 0]
         info = self.u + pprint.pformat(self.info).replace('\n', ' ')
-        return [self.timestamp, self.transaction_type, "IGNORE", info]   
-    
+        return [self.timestamp, self.transaction_type, "IGNORE", info]
+
 def operation(r):
     return r[1]['op'][0]
 
@@ -184,8 +192,8 @@ def operation(r):
 
 def bless_row(r):
     op = r[1]['op'][0]
-    ignore = ['comment_options', 'account_witness_vote', 'curation_reward', 
-              'delete_comment', 'account_create', 'custom_json', 
+    ignore = ['comment_options', 'account_witness_vote', 'curation_reward',
+              'delete_comment', 'account_create', 'custom_json',
               'vote', 'author_reward', 'comment', 'account_witness_proxy',
               'limit_order_create', 'limit_order_cancel'
               ]
@@ -196,30 +204,41 @@ def bless_row(r):
             author_reward=AuthorReward, withdraw_vesting=WithdrawVesting,
             curation_reward=CurationReward
             )
-    
+
     if op in dispatch:
         return dispatch[op](r, op)
-    
+
     if op in ignore:
         return None
 
     return Unknown(r, op)
 
 
-ops = set()
+def process(acct):
+    ops = set()
 
-with open('out.csv', 'w', newline='', encoding='utf-8') as csvfile:
-    writer = csv.writer(csvfile)
+    s = Steem()
 
-    writer.writerow(
-        "Date TransactionType SBD Steem SteemPower Vests TransactionID Memo".split())
+    top_record = s.get_account_history(acct, index_from=-1, limit=0)
+    top_index = top_record[0][0]
 
-    for record in s.get_account_history(acct, index_from=-1, limit=top_index):
-        r = bless_row(record)
-        if not r:
-            continue
-        print(str(r).encode('utf-8'))
-        ops.add(r.op)
-        writer.writerow(r.build())
-        
-    print("OPS:{}".format(ops))
+    with open('out.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+
+        writer.writerow(
+            "Date TransactionType SBD Steem SteemPower Vests TransactionID Memo".split())
+
+        for record in s.get_account_history(acct, index_from=-1, limit=top_index):
+            r = bless_row(record)
+            if not r:
+                continue
+            print(str(r).encode('utf-8'))
+            ops.add(r.op)
+            writer.writerow(r.build())
+
+        print("OPS:{}".format(ops))
+
+def main(acct='tradeqwik'):
+    process(acct)
+
+argh.dispatch_command(main)
