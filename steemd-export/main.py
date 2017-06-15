@@ -26,6 +26,17 @@ from steem.amount import Amount
 
 # print(top_index)
 
+def x_to_usd(x, btc_per_x):
+    x_to_btc = steem * btc_per_x
+    btc_to_usd = x_to_btc * usd_per_btc
+    return btc_to_usd
+
+def steem_to_usd(units_of_steem, btc_per_steem):
+    return x_to_usd(units_of_steem, btc_per_steem)
+
+def sbd_to_usd(units_of_sbd, btc_per_sbd):
+    return x_to_usd(units_of_sbd, btc_per_sbd)
+
 
 class Transaction(object):
 
@@ -110,7 +121,7 @@ class FillVestingWithdraw(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return [0, self.operation_detail['deposited'], 0]
+        return [0, Amount(self.operation_detail['deposited']).amount, 0]
 
 class ClaimRewardBalance(MNoMemo, Transaction):
 
@@ -192,7 +203,7 @@ def operation(r):
 
 def bless_row(r):
     op = r[1]['op'][0]
-    ignore = ['comment_options', 'account_witness_vote', 'curation_reward',
+    ignore = ['comment_options', 'account_witness_vote',
               'delete_comment', 'account_create', 'custom_json',
               'vote', 'author_reward', 'comment', 'account_witness_proxy',
               'limit_order_create', 'limit_order_cancel'
@@ -222,11 +233,11 @@ def process(acct):
     top_record = s.get_account_history(acct, index_from=-1, limit=0)
     top_index = top_record[0][0]
 
-    with open('out.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('sherry2.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
 
         writer.writerow(
-            "Date TransactionType SBD Steem SteemPower Vests TransactionID Memo".split())
+            "Date TransactionType AsUSD SBD Steem SteemPower Vests TransactionID Memo".split())
 
         for record in s.get_account_history(acct, index_from=-1, limit=top_index):
             r = bless_row(record)
@@ -242,3 +253,34 @@ def main(acct='tradeqwik'):
     process(acct)
 
 argh.dispatch_command(main)
+
+"""
+>>> from time import strptime
+>>> s = strptime('2017-05-07 00:00:18', "%Y-%m-%d %H:%M:%S")
+>>> s
+time.struct_time(tm_year=2017, tm_mon=5, tm_mday=7, tm_hour=0, tm_min=0, tm_sec=18, tm_wday=6, tm_yday=127, tm_isdst=-1)
+>>> s = strptime('2017-05-07T00:00:18', "%Y-%m-%dT%H:%M:%S")
+>>> s
+time.struct_time(tm_year=2017, tm_mon=5, tm_mday=7, tm_hour=0, tm_min=0, tm_sec=18, tm_wday=6, tm_yday=127, tm_isdst=-1)
+>>> type(s)
+<class 'time.struct_time'>
+>>> from time import localtime
+>>> s2 = localtime()
+>>> s2
+time.struct_time(tm_year=2017, tm_mon=6, tm_mday=15, tm_hour=8, tm_min=17, tm_sec=15, tm_wday=3, tm_yday=166, tm_isdst=1)
+>>> from datetime import datetime
+>>> dt datetime.fromtimestamp(mktime(s2))
+  File "<stdin>", line 1
+    dt datetime.fromtimestamp(mktime(s2))
+              ^
+SyntaxError: invalid syntax
+>>> dt = datetime.fromtimestamp(mktime(s2))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'mktime' is not defined
+>>> from time import mktime
+>>> dt = datetime.fromtimestamp(mktime(s2))
+>>> dt.timestamp()
+1497529035.0
+>>>
+"""
