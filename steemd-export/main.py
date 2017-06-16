@@ -31,6 +31,50 @@ def x_to_usd(x, btc_per_x):
     btc_to_usd = x_to_btc * usd_per_btc
     return btc_to_usd
 
+historical_cost_for(currency, date):
+    pass
+
+"""
+>>> from time import strptime
+>>> s = strptime('2017-05-07 00:00:18', "%Y-%m-%d %H:%M:%S")
+>>> s
+time.struct_time(tm_year=2017, tm_mon=5, tm_mday=7, tm_hour=0, tm_min=0, tm_sec=18, tm_wday=6, tm_yday=127, tm_isdst=-1)
+>>> s = strptime('2017-05-07T00:00:18', "%Y-%m-%dT%H:%M:%S")
+>>> s
+time.struct_time(tm_year=2017, tm_mon=5, tm_mday=7, tm_hour=0, tm_min=0, tm_sec=18, tm_wday=6, tm_yday=127, tm_isdst=-1)
+>>> type(s)
+<class 'time.struct_time'>
+>>> from time import localtime
+>>> s2 = localtime()
+>>> s2
+time.struct_time(tm_year=2017, tm_mon=6, tm_mday=15, tm_hour=8, tm_min=17, tm_sec=15, tm_wday=3, tm_yday=166, tm_isdst=1)
+>>> from datetime import datetime
+>>> dt datetime.fromtimestamp(mktime(s2))
+  File "<stdin>", line 1
+    dt datetime.fromtimestamp(mktime(s2))
+              ^
+SyntaxError: invalid syntax
+>>> dt = datetime.fromtimestamp(mktime(s2))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'mktime' is not defined
+>>> from time import mktime
+>>> dt = datetime.fromtimestamp(mktime(s2))
+>>> dt.timestamp()
+1497529035.0
+>>>
+"""    
+
+def amount_to_usd(symbol, amount, date):
+    if symbol == 'SBD':
+        btc_cost = historical_cost_for('SBD', date)
+        return sbd_to_usd(amount, btc_cost), btc_cost
+    if symbol == 'STEEM':
+        btc_cost = historical_cost_for('STEEM', date)
+        return steem_to_usd(amount, btc_cost), btc_cost
+    
+    return "CANT CONVERT", "????"
+
 def steem_to_usd(units_of_steem, btc_per_steem):
     return x_to_usd(units_of_steem, btc_per_steem)
 
@@ -254,33 +298,3 @@ def main(acct='tradeqwik'):
 
 argh.dispatch_command(main)
 
-"""
->>> from time import strptime
->>> s = strptime('2017-05-07 00:00:18', "%Y-%m-%d %H:%M:%S")
->>> s
-time.struct_time(tm_year=2017, tm_mon=5, tm_mday=7, tm_hour=0, tm_min=0, tm_sec=18, tm_wday=6, tm_yday=127, tm_isdst=-1)
->>> s = strptime('2017-05-07T00:00:18', "%Y-%m-%dT%H:%M:%S")
->>> s
-time.struct_time(tm_year=2017, tm_mon=5, tm_mday=7, tm_hour=0, tm_min=0, tm_sec=18, tm_wday=6, tm_yday=127, tm_isdst=-1)
->>> type(s)
-<class 'time.struct_time'>
->>> from time import localtime
->>> s2 = localtime()
->>> s2
-time.struct_time(tm_year=2017, tm_mon=6, tm_mday=15, tm_hour=8, tm_min=17, tm_sec=15, tm_wday=3, tm_yday=166, tm_isdst=1)
->>> from datetime import datetime
->>> dt datetime.fromtimestamp(mktime(s2))
-  File "<stdin>", line 1
-    dt datetime.fromtimestamp(mktime(s2))
-              ^
-SyntaxError: invalid syntax
->>> dt = datetime.fromtimestamp(mktime(s2))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'mktime' is not defined
->>> from time import mktime
->>> dt = datetime.fromtimestamp(mktime(s2))
->>> dt.timestamp()
-1497529035.0
->>>
-"""
