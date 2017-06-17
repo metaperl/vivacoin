@@ -8,31 +8,13 @@ import pprint
 import argh
 from steem import Steem
 from steem.amount import Amount
+from steem.account import Account
 
 # Local
 
 
 
 
-
-# acct = 'tradeqwik'
-
-# s = Steem()
-# pprint(s.get_account(acct))
-
-# top_record = s.get_account_history(acct, index_from=-1, limit=0)
-
-# top_index = top_record[0][0]
-
-# print(top_index)
-
-def x_to_usd(x, btc_per_x):
-    x_to_btc = steem * btc_per_x
-    btc_to_usd = x_to_btc * usd_per_btc
-    return btc_to_usd
-
-historical_cost_for(currency, date):
-    pass
 
 """
 >>> from time import strptime
@@ -65,21 +47,37 @@ NameError: name 'mktime' is not defined
 >>>
 """    
 
-def amount_to_usd(symbol, amount, date):
-    if symbol == 'SBD':
-        btc_cost = historical_cost_for('SBD', date)
-        return sbd_to_usd(amount, btc_cost), btc_cost
-    if symbol == 'STEEM':
-        btc_cost = historical_cost_for('STEEM', date)
-        return steem_to_usd(amount, btc_cost), btc_cost
+def _historical_cost_for(currency, date):
+    pass
+
+def historical_cost_for(currency, date):
+    if currency == 'BTC':
+        return _historical_cost_for('USDT_BTC', date)
+    else:
+        return _historical_cost_for('BTC_'+currency, date)    
+
+def amount_to_usd(amount, date):
+    usd_per_btc = historical_cost_for('BTC', date)
+    if amount.symbol == 'SBD':
+        btc_cost = historical_cost_for(amount.symbol, date)
+        return sbd_to_usd(amount.amount, btc_cost, usd_per_btc), btc_cost
+    if amount.symbol == 'STEEM':
+        btc_cost = historical_cost_for(amount.symbol, date)
+        return steem_to_usd(amount.amount, btc_cost, usd_per_btc), btc_cost
     
     return "CANT CONVERT", "????"
 
-def steem_to_usd(units_of_steem, btc_per_steem):
-    return x_to_usd(units_of_steem, btc_per_steem)
 
-def sbd_to_usd(units_of_sbd, btc_per_sbd):
-    return x_to_usd(units_of_sbd, btc_per_sbd)
+def x_to_usd(x, btc_per_x, usd_per_btc):
+    x_to_btc = x * btc_per_x
+    btc_to_usd = x_to_btc * usd_per_btc
+    return btc_to_usd
+
+def steem_to_usd(units_of_steem, btc_per_steem, usd_per_btc):
+    return x_to_usd(units_of_steem, btc_per_steem, usd_per_btc)
+
+def sbd_to_usd(units_of_sbd, btc_per_sbd, usd_per_btc):
+    return x_to_usd(units_of_sbd, btc_per_sbd, usd_per_btc)
 
 
 class Transaction(object):
@@ -136,6 +134,7 @@ class Transaction(object):
         amount = Amount(self.operation_detail['amount'])
         retval = [0, 0, 0, 0]
         retval[self.currency_index[amount.symbol]] = amount.amount
+        usd, btc = amount_to_usd(amount, self.timestamp)
         return retval
 
     def build(self):
@@ -269,21 +268,24 @@ def bless_row(r):
     return Unknown(r, op)
 
 
-def process(acct):
+def process(acct, index_from, limit):
     ops = set()
 
     s = Steem()
+    
+    print(s.get_account(acct))
 
     top_record = s.get_account_history(acct, index_from=-1, limit=0)
     top_index = top_record[0][0]
-
-    with open('sherry2.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    print("TOP INDEX: {}".format(top_index))
+    
+    with open('sherry3.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
 
         writer.writerow(
-            "Date TransactionType AsUSD SBD Steem SteemPower Vests TransactionID Memo".split())
+            "Date TransactionType AsUSD AsBTC SBD Steem SteemPower Vests TransactionID Memo".split())
 
-        for record in s.get_account_history(acct, index_from=-1, limit=top_index):
+        for record in s.get_account_history(acct, index_from, limit):
             r = bless_row(record)
             if not r:
                 continue
@@ -293,8 +295,8 @@ def process(acct):
 
         print("OPS:{}".format(ops))
 
-def main(acct='tradeqwik'):
-    process(acct)
+def main(index_from, limit, acct='tradeqwik'):
+    process(acct, index_from, limit)
 
 argh.dispatch_command(main)
 
