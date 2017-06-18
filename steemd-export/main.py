@@ -47,8 +47,36 @@ NameError: name 'mktime' is not defined
 >>>
 """    
 
+def currency2pair(c):
+    if c == 'BTC':
+        return "USDT_BTC"
+    else:
+        return "BTC_"+c
+
+def historical_cost_url(start, currency):
+    width = 300 # 5 minute candle
+    end = start + 10000
+    url =  "https://poloniex.com/public?command=returnChartData&currencyPair={}".format(currency)
+    url += "&start={}&end={}&period={}".format(start, end, width)
+    return url
+            
+
 def _historical_cost_for(currency, date):
-    pass
+    print("Passed-in currency={} date={}".format(currency, date))
+    from datetime import datetime
+    from time import mktime, strptime
+    s = strptime(date, "%Y-%m-%dT%H:%M:%S")
+    print("S: {}".format(s))
+    start = datetime.fromtimestamp(mktime(s)).timestamp()
+    
+    import requests
+
+    url = historical_cost_url(start, currency)
+    print("Historical Cost URL={}".format(url))
+    r = requests.get(url)
+    j = r.json()
+    print("JSON: {}".format(j))
+    return r.json()[0]['close']
 
 def historical_cost_for(currency, date):
     if currency == 'BTC':
