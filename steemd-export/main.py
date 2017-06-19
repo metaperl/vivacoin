@@ -221,13 +221,13 @@ class Interest(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return ['i?', 'i?'] + [Amount(self.operation_detail[self.op]).amount, 0, 0]
+        return ['?', '?'] + [Amount(self.operation_detail[self.op]).amount, 'n/a', 'n/a', 'n/a']
 
 class WithdrawVesting(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return ['?', '?'] + [0, 0, Amount(self.operation_detail['vesting_shares']).amount]
+        return ['?', '?'] + [0, 0, Amount(self.operation_detail['vesting_shares']).amount, 0]
 
 class TransferToVesting(MNoMemo, Transaction):
 
