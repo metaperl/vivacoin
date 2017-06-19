@@ -12,40 +12,7 @@ from steem.account import Account
 
 # Local
 
-
-
-
-
-"""
->>> from time import strptime
->>> s = strptime('2017-05-07 00:00:18', "%Y-%m-%d %H:%M:%S")
->>> s
-time.struct_time(tm_year=2017, tm_mon=5, tm_mday=7, tm_hour=0, tm_min=0, tm_sec=18, tm_wday=6, tm_yday=127, tm_isdst=-1)
->>> s = strptime('2017-05-07T00:00:18', "%Y-%m-%dT%H:%M:%S")
->>> s
-time.struct_time(tm_year=2017, tm_mon=5, tm_mday=7, tm_hour=0, tm_min=0, tm_sec=18, tm_wday=6, tm_yday=127, tm_isdst=-1)
->>> type(s)
-<class 'time.struct_time'>
->>> from time import localtime
->>> s2 = localtime()
->>> s2
-time.struct_time(tm_year=2017, tm_mon=6, tm_mday=15, tm_hour=8, tm_min=17, tm_sec=15, tm_wday=3, tm_yday=166, tm_isdst=1)
->>> from datetime import datetime
->>> dt datetime.fromtimestamp(mktime(s2))
-  File "<stdin>", line 1
-    dt datetime.fromtimestamp(mktime(s2))
-              ^
-SyntaxError: invalid syntax
->>> dt = datetime.fromtimestamp(mktime(s2))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'mktime' is not defined
->>> from time import mktime
->>> dt = datetime.fromtimestamp(mktime(s2))
->>> dt.timestamp()
-1497529035.0
->>>
-"""    
+ 
 
 def currency2pair(c):
     if c == 'BTC':
@@ -93,7 +60,7 @@ def amount_to_usd(amount, date):
         btc_cost = historical_cost_for(amount.symbol, date)
         return steem_to_usd(amount.amount, btc_cost, usd_per_btc), btc_cost
     
-    return "CANT CONVERT", "????"
+    return "CANT CONVERT", "NOCONV"
 
 
 def x_to_usd(x, btc_per_x, usd_per_btc):
@@ -142,7 +109,7 @@ class Transaction(object):
 
     @property
     def operation_amount(self):
-        return Amount(self.operation_detail['amount']).amount
+        return Amount(self.operation_detail['amount'])
 
     @property
     def transaction_type(self):
@@ -157,13 +124,17 @@ class Transaction(object):
         return self.u + self.operation[1]['memo']
 
     currency_index = dict(SBD=0, STEEM=1, SP=2, VESTS=3)
+    
+    def fiatify(self, amount):
+        usd, btc = amount_to_usd(amount, self.timestamp)
+        return [usd, btc]
+
 
     def amount2currencyfields(self, amount_field='amount'):
         amount = Amount(self.operation_detail[amount_field])
         retval = [0, 0, 0, 0]
         retval[self.currency_index[amount.symbol]] = amount.amount
-        usd, btc = amount_to_usd(amount, self.timestamp)
-        retval = [usd, btc] + retval
+        retval = self.fiatify(amount) + retval
         return retval
 
     def build(self):
@@ -171,13 +142,21 @@ class Transaction(object):
 
     def reward2currencyfields(self, concat):
         retval = list()
+        usd_btc = ['?', '?']
         for t in self.reward_fields:
+            print("RC2F reward field="+t)
             if t == 'steem_power':
                 retval.append('n/a')
                 continue
             l = concat(t)
-            m = Amount(self.operation_detail[l]).amount
+            a = Amount(self.operation_detail[l])
+            m = a.amount
+            if m > 0 and ('vest' not in l):
+                usd_btc = self.fiatify(a)
             retval.append(m)
+            
+        retval = usd_btc + retval
+        print("RC2F returning:{}".format(retval))
         return retval
 
 class MNoMemo(object):
@@ -193,7 +172,9 @@ class FillVestingWithdraw(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return [0, Amount(self.operation_detail['deposited']).amount, 0]
+        a = Amount(self.operation_detail['deposited'])
+        usd_btc = self.fiatify(a)
+        return usd_btc + [0, a.amount, 0]
 
 class ClaimRewardBalance(MNoMemo, Transaction):
 
@@ -234,25 +215,28 @@ class FillOrder(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return [self.pay_logic('open'), self.pay_logic('current'), 0, 0]
+        return ["Sherry", "Please advise"] + [self.pay_logic('open'), self.pay_logic('current'), 0, 0]
 
 class Interest(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return [Amount(self.operation_detail[self.op]).amount, 0, 0]
+        return ['i?', 'i?'] + [Amount(self.operation_detail[self.op]).amount, 0, 0]
 
 class WithdrawVesting(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return [0, 0, Amount(self.operation_detail['vesting_shares']).amount]
+        return ['?', '?'] + [0, 0, Amount(self.operation_detail['vesting_shares']).amount]
 
 class TransferToVesting(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return [0, self.operation_amount, 0, 0]
+        a = self.operation_amount
+        print("Attempting to instance: {}".format(a))
+        usd_btc = self.fiatify(a)
+        return usd_btc + [0, a.amount, 0, 0]
 
 
 class Unknown(Transaction):
@@ -313,7 +297,7 @@ def process(acct, index_from, limit):
         writer = csv.writer(csvfile)
 
         writer.writerow(
-            "Date TransactionType AsUSD AsBTC SBD Steem SteemPower Vests TransactionID Memo".split())
+            "Date TransactionType TotalAsUSD UnitAsBTC SBD Steem SteemPower Vests TransactionID Memo".split())
 
         for record in s.get_account_history(acct, index_from, limit):
             r = bless_row(record)
