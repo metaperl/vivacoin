@@ -156,13 +156,14 @@ class Transaction(object):
     def memo(self):
         return self.u + self.operation[1]['memo']
 
-    currency_index = dict(SBD=0, STEEM=1, SP=2)
+    currency_index = dict(SBD=0, STEEM=1, SP=2, VESTS=3)
 
-    def amount2currencyfields(self):
-        amount = Amount(self.operation_detail['amount'])
+    def amount2currencyfields(self, amount_field='amount'):
+        amount = Amount(self.operation_detail[amount_field])
         retval = [0, 0, 0, 0]
         retval[self.currency_index[amount.symbol]] = amount.amount
         usd, btc = amount_to_usd(amount, self.timestamp)
+        retval = [usd, btc] + retval
         return retval
 
     def build(self):
@@ -207,7 +208,8 @@ class ClaimRewardBalance(MNoMemo, Transaction):
 class CurationReward(MNoMemo, Transaction):
     @property
     def currency_fields(self):
-        return [0, 0, 0, Amount(self.operation_detail['reward']).amount]
+        # return [0, 0, 0, Amount(self.operation_detail['reward']).amount]
+        return self.amount2currencyfields('reward')
 
 class AuthorReward(MNoMemo, Transaction):
     @property
