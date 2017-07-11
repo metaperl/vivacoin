@@ -65,6 +65,14 @@ In other words, our chosen range was 4730 to 8530. So we need to
 subtract these numbers to see how many entries we want and supply 8530
 and our index to move backwards from:
 
+```
+schemelab@metta:~/prg/vivacoin/steemd-export$ python3 -i
+Python 3.5.3 (default, Jan 19 2017, 14:11:04)
+[GCC 6.3.0 20170118] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 8530 - 4730
+3800
+```
 
 
 
