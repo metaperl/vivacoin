@@ -74,6 +74,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 3800
 ```
 
+and now run main:
+
+schemelab@metta:~/prg/vivacoin/steemd-export$ python3 main.py tradeqwik 8530 3800
 
 
 
