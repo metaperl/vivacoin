@@ -12,7 +12,7 @@ from steem.account import Account
 
 # Local
 
- 
+
 
 def currency2pair(c):
     if c == 'BTC':
@@ -26,7 +26,7 @@ def historical_cost_url(start, currency):
     url =  "https://poloniex.com/public?command=returnChartData&currencyPair={}".format(currency)
     url += "&start={}&end={}&period={}".format(start, end, width)
     return url
-            
+
 
 def _historical_cost_for(currency, date):
     print("Passed-in currency={} date={}".format(currency, date))
@@ -35,7 +35,7 @@ def _historical_cost_for(currency, date):
     s = strptime(date, "%Y-%m-%dT%H:%M:%S")
     print("S: {}".format(s))
     start = datetime.fromtimestamp(mktime(s)).timestamp()
-    
+
     import requests
 
     url = historical_cost_url(start, currency)
@@ -49,7 +49,7 @@ def historical_cost_for(currency, date):
     if currency == 'BTC':
         return _historical_cost_for('USDT_BTC', date)
     else:
-        return _historical_cost_for('BTC_'+currency, date)    
+        return _historical_cost_for('BTC_'+currency, date)
 
 def amount_to_usd(amount, date):
     usd_per_btc = historical_cost_for('BTC', date)
@@ -59,7 +59,7 @@ def amount_to_usd(amount, date):
     if amount.symbol == 'STEEM':
         btc_cost = historical_cost_for(amount.symbol, date)
         return steem_to_usd(amount.amount, btc_cost, usd_per_btc), btc_cost
-    
+
     return "CANT CONVERT", "NOCONV"
 
 
@@ -124,7 +124,7 @@ class Transaction(object):
         return self.u + self.operation[1]['memo']
 
     currency_index = dict(SBD=0, STEEM=1, SP=2, VESTS=3)
-    
+
     def fiatify(self, amount):
         usd, btc = amount_to_usd(amount, self.timestamp)
         return [usd, btc]
@@ -154,7 +154,7 @@ class Transaction(object):
             if m > 0 and ('vest' not in l):
                 usd_btc = self.fiatify(a)
             retval.append(m)
-            
+
         retval = usd_btc + retval
         print("RC2F returning:{}".format(retval))
         return retval
@@ -227,7 +227,7 @@ class WithdrawVesting(MNoMemo, Transaction):
 
     @property
     def currency_fields(self):
-        return ['?', '?'] + [0, 0, Amount(self.operation_detail['vesting_shares']).amount, 0]
+        return ['?', '?'] + [0, 0, 0, Amount(self.operation_detail['vesting_shares']).amount]
 
 class TransferToVesting(MNoMemo, Transaction):
 
@@ -286,14 +286,14 @@ def process(acct, index_from, limit):
     ops = set()
 
     s = Steem()
-    
+
     print(s.get_account(acct))
 
     top_record = s.get_account_history(acct, index_from=-1, limit=0)
     top_index = top_record[0][0]
     print("TOP INDEX: {}".format(top_index))
-    
-    with open('sherry3.csv', 'w', newline='', encoding='utf-8') as csvfile:
+
+    with open('sherry.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
 
         writer.writerow(
@@ -313,4 +313,3 @@ def main(index_from, limit, acct='tradeqwik'):
     process(acct, index_from, limit)
 
 argh.dispatch_command(main)
-

@@ -1,14 +1,14 @@
 import argh
-from steem.account import Account
+from steem.steemd import Steemd
 
 
-def process(acct, start, limit):
+def process(acct, index_from, limit):
     ops = set()
 
-    a = Account(acct)
+    s = Steemd()
 
-    for record in a.get_account_history(start, limit):
-        print(record['timestamp'])
+    for record in s.get_account_history(acct, index_from, limit):
+        print(record)
 
 def main(start, limit, acct='tradeqwik'):
     process(acct, start, limit)
